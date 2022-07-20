@@ -23,7 +23,7 @@ struct HomeViewRow: View {
             Rectangle()
                 .foregroundColor(.white)
                 .cornerRadius(10)
-                .shadow(radius: 10)
+                .shadow(radius: 5)
                 .aspectRatio(CGSize(width: 335, height: 175), contentMode: .fit)
             
             HStack {
@@ -42,7 +42,6 @@ struct HomeViewRow: View {
                     // Headline
                     Text(title)
                         .bold()
-                        .font(.headline)
                     
                     // Description
                     Text(description)
@@ -69,6 +68,7 @@ struct HomeViewRow: View {
                             .font(Font.system(size: 10))
                     }
                 }
+                .multilineTextAlignment(.leading)
                 .padding(.leading)
             }
             .padding(.horizontal, 20)

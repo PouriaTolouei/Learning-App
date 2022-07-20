@@ -19,24 +19,33 @@ struct HomeView: View {
                 
                 ScrollView {
                     
-                    LazyVStack(spacing: 20) {
+                    LazyVStack {
                         
                         ForEach(model.modules) { module in
                             
-                            VStack {
-                            
-                                // Learning Card
-                                HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count: ("\(module.content.lessons.count) Lessons"), time: module.content.time)
+                            VStack(spacing: 20) {
+                                
+                                NavigationLink {
+                                    ContentView()
+                                        .onAppear {
+                                            model.beginModule(module.id)
+                                        }
+                                } label: {
+                                    // Learning Card
+                                    HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count: ("\(module.content.lessons.count) Lessons"), time: module.content.time)
+                                }
                                 
                                 // Test Card
                                 HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, count: ("\(module.test.questions.count) Questions"), time: module.test.time)
                             }
                         }
                     }
+                    .accentColor(.black)
                     .padding()
                 }
             }
             .navigationTitle("Get Started")
+            
         }
     }
 }
