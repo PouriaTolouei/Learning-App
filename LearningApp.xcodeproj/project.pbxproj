@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A199A54288A5448008821CB /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A199A53288A5448008821CB /* AVKit.framework */; };
+		3A199A56288A5693008821CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A199A55288A5693008821CB /* Constants.swift */; };
 		3A1A0E862886ACCE00AECED2 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A0E852886ACCE00AECED2 /* HomeViewRow.swift */; };
 		3A974ADF2883DF89003405B6 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A974ADE2883DF89003405B6 /* Models.swift */; };
+		3AC466B928897ADD002D61F9 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC466B828897ADD002D61F9 /* ContentDetailView.swift */; };
 		3AD3A3B92882963A007BBA97 /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3A3B82882963A007BBA97 /* LearningApp.swift */; };
 		3AD3A3BB2882963A007BBA97 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3A3BA2882963A007BBA97 /* HomeView.swift */; };
 		3AD3A3BD2882963D007BBA97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD3A3BC2882963D007BBA97 /* Assets.xcassets */; };
@@ -21,8 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A199A53288A5448008821CB /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		3A199A55288A5693008821CB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3A1A0E852886ACCE00AECED2 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 		3A974ADE2883DF89003405B6 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		3AC466B828897ADD002D61F9 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		3AD3A3B52882963A007BBA97 /* LearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD3A3B82882963A007BBA97 /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
 		3AD3A3BA2882963A007BBA97 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -40,17 +46,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A199A54288A5448008821CB /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A199A52288A5448008821CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A199A53288A5448008821CB /* AVKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3AD3A3AC2882963A007BBA97 = {
 			isa = PBXGroup;
 			children = (
 				3AD3A3B72882963A007BBA97 /* LearningApp */,
 				3AD3A3B62882963A007BBA97 /* Products */,
+				3A199A52288A5448008821CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +113,7 @@
 			children = (
 				3AFBCC6A2882DF3E007FF1DA /* data.json */,
 				3AFBCC6B2882DF3E007FF1DA /* style.html */,
+				3A199A55288A5693008821CB /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -124,6 +141,7 @@
 				3A1A0E852886ACCE00AECED2 /* HomeViewRow.swift */,
 				3AFD8AC82887CE1900DC99DF /* ContentView.swift */,
 				3AFD8ACA2887CECB00DC99DF /* ContentViewRow.swift */,
+				3AC466B828897ADD002D61F9 /* ContentDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,9 +221,11 @@
 				3AD3A3BB2882963A007BBA97 /* HomeView.swift in Sources */,
 				3A1A0E862886ACCE00AECED2 /* HomeViewRow.swift in Sources */,
 				3AFD8AC92887CE1900DC99DF /* ContentView.swift in Sources */,
+				3AC466B928897ADD002D61F9 /* ContentDetailView.swift in Sources */,
 				3AD3A3B92882963A007BBA97 /* LearningApp.swift in Sources */,
 				3AFD8ACB2887CECB00DC99DF /* ContentViewRow.swift in Sources */,
 				3AD3A3CC288297D1007BBA97 /* ContentModel.swift in Sources */,
+				3A199A56288A5693008821CB /* Constants.swift in Sources */,
 				3A974ADF2883DF89003405B6 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
