@@ -17,6 +17,7 @@
 		3AD3A3BD2882963D007BBA97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD3A3BC2882963D007BBA97 /* Assets.xcassets */; };
 		3AD3A3C02882963D007BBA97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD3A3BF2882963D007BBA97 /* Preview Assets.xcassets */; };
 		3AD3A3CC288297D1007BBA97 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3A3CB288297D1007BBA97 /* ContentModel.swift */; };
+		3AE55FAA288D499D002DD100 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE55FA9288D499D002DD100 /* CodeTextView.swift */; };
 		3AFBCC6C2882DF3E007FF1DA /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AFBCC6A2882DF3E007FF1DA /* data.json */; };
 		3AFBCC6D2882DF3E007FF1DA /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 3AFBCC6B2882DF3E007FF1DA /* style.html */; };
 		3AFD8AC92887CE1900DC99DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFD8AC82887CE1900DC99DF /* ContentView.swift */; };
@@ -35,6 +36,7 @@
 		3AD3A3BC2882963D007BBA97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AD3A3BF2882963D007BBA97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3AD3A3CB288297D1007BBA97 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		3AE55FA9288D499D002DD100 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		3AFBCC6A2882DF3E007FF1DA /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3AFBCC6B2882DF3E007FF1DA /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		3AFD8AC82887CE1900DC99DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				3AFD8AC82887CE1900DC99DF /* ContentView.swift */,
 				3AFD8ACA2887CECB00DC99DF /* ContentViewRow.swift */,
 				3AC466B828897ADD002D61F9 /* ContentDetailView.swift */,
+				3AE55FA9288D499D002DD100 /* CodeTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				3AC466B928897ADD002D61F9 /* ContentDetailView.swift in Sources */,
 				3AD3A3B92882963A007BBA97 /* LearningApp.swift in Sources */,
 				3AFD8ACB2887CECB00DC99DF /* ContentViewRow.swift in Sources */,
+				3AE55FAA288D499D002DD100 /* CodeTextView.swift in Sources */,
 				3AD3A3CC288297D1007BBA97 /* ContentModel.swift in Sources */,
 				3A199A56288A5693008821CB /* Constants.swift in Sources */,
 				3A974ADF2883DF89003405B6 /* Models.swift in Sources */,
@@ -354,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LearningApp/Preview Content\"";
@@ -372,6 +377,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pouriatolouei.LearningApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -383,6 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LearningApp/Preview Content\"";
@@ -401,6 +408,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pouriatolouei.LearningApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
