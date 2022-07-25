@@ -10,6 +10,7 @@
 		3A199A54288A5448008821CB /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A199A53288A5448008821CB /* AVKit.framework */; };
 		3A199A56288A5693008821CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A199A55288A5693008821CB /* Constants.swift */; };
 		3A1A0E862886ACCE00AECED2 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A0E852886ACCE00AECED2 /* HomeViewRow.swift */; };
+		3A7A0DCB288ED8700033EED0 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A0DCA288ED8700033EED0 /* RectangleCard.swift */; };
 		3A974ADF2883DF89003405B6 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A974ADE2883DF89003405B6 /* Models.swift */; };
 		3AC466B928897ADD002D61F9 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC466B828897ADD002D61F9 /* ContentDetailView.swift */; };
 		3AD3A3B92882963A007BBA97 /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3A3B82882963A007BBA97 /* LearningApp.swift */; };
@@ -28,6 +29,7 @@
 		3A199A53288A5448008821CB /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		3A199A55288A5693008821CB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3A1A0E852886ACCE00AECED2 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		3A7A0DCA288ED8700033EED0 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		3A974ADE2883DF89003405B6 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		3AC466B828897ADD002D61F9 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		3AD3A3B52882963A007BBA97 /* LearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +147,7 @@
 				3AFD8ACA2887CECB00DC99DF /* ContentViewRow.swift */,
 				3AC466B828897ADD002D61F9 /* ContentDetailView.swift */,
 				3AE55FA9288D499D002DD100 /* CodeTextView.swift */,
+				3A7A0DCA288ED8700033EED0 /* RectangleCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				3AE55FAA288D499D002DD100 /* CodeTextView.swift in Sources */,
 				3AD3A3CC288297D1007BBA97 /* ContentModel.swift in Sources */,
 				3A199A56288A5693008821CB /* Constants.swift in Sources */,
+				3A7A0DCB288ED8700033EED0 /* RectangleCard.swift in Sources */,
 				3A974ADF2883DF89003405B6 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
