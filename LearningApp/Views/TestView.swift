@@ -28,7 +28,7 @@ struct TestView: View {
                 // Answers
                 ScrollView {
                     VStack {
-                        ForEach(0..<question.answers.count) { index in
+                        ForEach(0..<question.answers.count, id: \.self) { index in
                             
                             Button {
                                 // Track the selected index
@@ -74,13 +74,29 @@ struct TestView: View {
                 // Submit Button
                 Button {
                     
-                    // Change submitted state to true
-                    isSubmitted = true
-                    
-                    // Check the answer and increment the counter if correct
-                    if selectedAnswerIndex == question.correctIndex {
-                        numeCorrect += 1
+                    // Check if answer has been submitted
+                    if  isSubmitted {
+                        
+                        // Reset properties
+                        isSubmitted = false
+                        selectedAnswerIndex = nil
+                        
+                        
+                        // Answer has already been submitted, move to next question
+                        model.nextQuestion()
                     }
+                    else {
+                        // Submit the answer
+                        
+                        // Change submitted state to true
+                        isSubmitted = true
+                        
+                        // Check the answer and increment the counter if correct
+                        if selectedAnswerIndex == question.correctIndex {
+                            numeCorrect += 1
+                        }
+                    }
+                    
                     
                 } label: {
                     ZStack {
@@ -88,7 +104,7 @@ struct TestView: View {
                         RectangleCard(color: .green)
                             .frame(height: 48)
                         
-                        Text("Submit")
+                        Text(buttonText)
                             .bold()
                             .foregroundColor(.white)
                     }
@@ -102,6 +118,24 @@ struct TestView: View {
         else {
             // Test hasn't loaded yet
             ProgressView()
+        }
+    }
+    
+    var buttonText: String {
+        
+        // Check if answer has been submitted
+        if isSubmitted {
+            if model.hasNextQuestion() {
+                // There is a next question
+                return "Next"
+            }
+            else {
+                // This is the last question
+                return "Finish"
+            }
+        }
+        else {
+            return "Submit"
         }
     }
 }
