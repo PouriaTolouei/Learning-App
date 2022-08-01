@@ -14,6 +14,24 @@ struct TestView: View {
     @State var numeCorrect = 0
     @State var isSubmitted = false
     
+    var buttonText: String {
+        
+        // Check if answer has been submitted
+        if isSubmitted {
+            if model.hasNextQuestion() {
+                // There is a next question
+                return "Next"
+            }
+            else {
+                // This is the last question
+                return "Finish"
+            }
+        }
+        else {
+            return "Submit"
+        }
+    }
+    
     var body: some View {
         if let question = model.currentQuestion {
             VStack(alignment: .leading) {
@@ -116,26 +134,9 @@ struct TestView: View {
             .navigationTitle("\(model.currentModule?.category ?? "") Test")
         }
         else {
-            // Test hasn't loaded yet
-            ProgressView()
-        }
-    }
-    
-    var buttonText: String {
-        
-        // Check if answer has been submitted
-        if isSubmitted {
-            if model.hasNextQuestion() {
-                // There is a next question
-                return "Next"
-            }
-            else {
-                // This is the last question
-                return "Finish"
-            }
-        }
-        else {
-            return "Submit"
+            // If current question is nill, show the result view
+            TestResultView(numCorrect: numeCorrect)
+                .navigationTitle("\(model.currentModule?.category ?? "") Test")
         }
     }
 }
