@@ -19,7 +19,7 @@ struct HomeView: View {
                 
                 ScrollView {
                     
-                    LazyVStack {
+                    LazyVStack(spacing: 20) {
                         
                         ForEach(model.modules) { module in
                             
