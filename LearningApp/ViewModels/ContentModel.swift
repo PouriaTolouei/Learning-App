@@ -151,6 +151,11 @@ class ContentModel: ObservableObject {
         
         // Set the current module
         currentModule = modules[currentIndex]
+        
+        // Dummy code to reduce the delay in loading the navigationTitle for ContentView
+        codeText = addstyling("<p> </p>")
+        codeText = nil
+        
     }
     
     func beginLesson(_ lessonid: Int) {
@@ -280,4 +285,5 @@ class ContentModel: ObservableObject {
         
         return resultString
     }
+    
 }
